@@ -1,1 +1,15 @@
 Node Scraper
+
+Dependencies Include:
+
+Node.js
+NVM
+
+-To install node.js and npm-
+http://joyeur.com/2010/12/10/installing-node-and-npm/
+
+
+-Node Modules-
+http-agent
+jsdom
+jquery

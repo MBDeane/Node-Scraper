@@ -1,3 +1,9 @@
+// Node-Scraper for CustomMade.com
+// by Mike Deane
+//
+// Largely based off of David Trejos "Scraping Made Easy with jQuery and SelectorGadget"
+// (http://blog.dtrejo.com/scraping-made-easy-with-jquery-and-selectorga)
+
 var util = require('util');
 var httpAgent = require('http-agent');
 var jsdom = require('jsdom').jsdom;
