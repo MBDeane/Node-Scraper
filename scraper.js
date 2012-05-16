@@ -48,7 +48,7 @@ var options = [
   { method: 'GET', uri: 'platform-storage-bed/by/gothiccabinetcraft' }
 ];
 
-var agent = httpAgent.create('10.99.2.46:8000', options);
+var agent = httpAgent.create('127.0.0.1:8000', options);
 
 agent.addListener('next', function (err, agent) {
   makerText(agent);
