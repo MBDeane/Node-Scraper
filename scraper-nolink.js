@@ -21,7 +21,7 @@ function makerText(agent) {
     var maker = $('#profile p a').text().trim().substring(0, 15).slice(0, -1) + '...';
     var budget = $('p.price strong').text().replace('\n ', '');
     
-    return '<li class="ppc_item">' + '\n' + '\t' + '<a href="' + pageLink + '">' + makerPic + '<\/a>' + '\n' + '\t' + '<a href="' + pageLink + '" class="item_name">' + cleanTitle + '<\/a>' + '\n' + '\t' + '<p>' + 'by ' + maker + '<\/p>' + '\n' + '\t' + '<p>' + budget + '<\/p>' + '\n' + '<\/li>';
+    return '<li class="ppc_item">' + '\n' + '\t' + makerPic + '\n' + '\t' + '<h3 class="item_name">' + cleanTitle + '<\/h3>' + '\n' + '\t' + '<p>' + 'by ' + maker + '<\/p>' + '\n' + '\t' + '<p>' + budget + '<\/p>' + '\n' + '<\/li>';
   });
   /* console.log( makerData ); */
   util.puts( makerData );
