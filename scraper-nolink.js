@@ -23,7 +23,6 @@ function makerText(agent) {
     
     return '<li class="ppc_item">' + '\n' + '\t' + makerPic + '\n' + '\t' + '<h3 class="item_name">' + cleanTitle + '<\/h3>' + '\n' + '\t' + '<p>' + 'by ' + maker + '<\/p>' + '\n' + '\t' + '<p>' + budget + '<\/p>' + '\n' + '<\/li>';
   });
-  /* console.log( makerData ); */
   util.puts( makerData );
 };
 
@@ -56,7 +55,7 @@ agent.addListener('next', function (err, agent) {
 });
 
 agent.addListener('stop', function (err, agent) {
-  if (err) console.log(err);
+  if (err) util.puts(err);
   util.puts( 'Furniture' );
 });
 

@@ -55,7 +55,7 @@ agent.addListener('next', function (err, agent) {
 });
 
 agent.addListener('stop', function (err, agent) {
-  if (err) console.log(err);
+  if (err) util.puts(err);
   util.puts( 'Furniture' );
 });
 
